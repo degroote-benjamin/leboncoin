@@ -1,0 +1,239 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <!-- ==========================================================================
+                   Start of header
+========================================================================== -->
+    <header>
+        <div class="navlogo">
+            <aside class="menumobile">
+                <a href="">Menu</a>
+            </aside>
+            <aside class="logo">
+                <figure>
+                    <img src="img/logo.svg" alt="Logo leboncoin">
+                </figure>
+            </aside>
+            <nav class="mainnav">
+                <ul>
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Déposer une annonce</a>
+                    </li>
+                    <li>
+                        <a href="">offres</a>
+                    </li>
+                    <li>
+                        <a href="">Demande</a>
+                    </li>
+                    <li>
+                        <a href="">Mes annonces</a>
+                    </li>
+                    <li>
+                        <a href="">Boutiques</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <aside class="connexion">
+            <button type="button" name="button">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+              se connecter
+          </button>
+        </aside>
+    </header>
+
+
+
+    <!-- ==========================================================================
+                   End of header
+========================================================================== -->
+
+
+
+    <!-- ==========================================================================
+                   start of main
+========================================================================== -->
+    <div class="maincontainer">
+
+        <section>
+            <h2>Deposer une annonce</h2>
+            <article>
+                <h3>Votre annonce</h3>
+
+                <label for="categorie" id="categorie">Categorie*</label>
+                <select class="categori" name="categorie">
+
+                </select>
+
+                <label for="vous" id="vous">Vous êtes un</label>
+                <INPUT type="radio" name="vous" value="part"> Particulier
+                <INPUT type="radio" name="vous" value="pro"> Profesionnel
+
+                <label for="annonce" id="annonce">Type d'annonces</label>
+                <INPUT type="radio" name="annonce" value="offre"> Offres
+                <INPUT type="radio" name="annonce" value="demande"> Demandes
+
+                <label for="titannon" id="titannon">Titre de l'annonces</label>
+                <input type="text" name="titannon" value="">
+
+
+                <label for="textann" id="textann">Texte de l'annonce</label>
+                <textarea name="textann" rows="4"></textarea>
+
+                <label for="prix" id="prix">Prix</label>
+                <div class="prix">
+                    <input type="text" name="prix" value=""><span></span>
+                </div>
+
+                <p><span>Photos :</span> Une annonce avec photo est 7 fois plus consultée qu'une annonce sans photo</p>
+
+                <aside class="photo">
+                    <article>
+                        <h3>PHOTO PRINCIPALE</h3>
+                        <figure>
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <h3>PHOTO 2</h3>
+                        <figure>
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <h3>PHOTO 3</h3>
+                        <figure>
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <h3>7 PHOTOS SUPPLEMENTAIRE</h3>
+                        <figure>
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                        </figure>
+                    </article>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Localisation</h2>
+                <section>
+                    <label for="ville" id="ville">Ville ou code postal</label>
+                    <div>
+                        <span></span>
+                        <input type="text" name="ville" value="">
+                    </div>
+                    <label for="adr" id="adr">Adresse</label>
+                    <input type="text" name="adr" value="" placeholder="Voie ou numero + voie">
+                    <span>Valider mon adresse</span>
+
+                    <p>Complétez votre adresse et les personnes utilisant la recherche autour de soi trouveront plus facilement votre annonce. Si vous ne souhaitez pas renseigner votre adresse exacte, indiquez votre rue sans donner le numéro. Cette information
+                        ne sera conservée que le temps de la publication de votre annonce.</p>
+
+                </section>
+
+                <section>
+
+                  <figure>
+                    <img src="map_france.png" alt="Image de map de france">
+                  </figure>
+                </section>
+            </article>
+
+            <article>
+              <h2>Vos informations</h2>
+              <label for="pseudo" id="pseudo">Pseudo</label>
+              <input type="text" name="pseudo" value="">
+
+              <label for="email" id="email">Email</label>
+              <input type="email" name="email" value="">
+
+              <label for="tel" id="tel">Telephone</label>
+              <input type="tel" name="tel" value="">
+
+              <input type="radio" name="" value=""><span>Masquer le numero de telephone dans l'annonce</span>
+              <input type="radio" name="" value=""><span>Je ne souhaite par des societere etrangere leboncoin</span>
+            </article>
+            <button type="button" name="button">Valider</button>
+
+        </section>
+
+    </div>
+
+
+    <!-- ==========================================================================
+                   start of footer
+========================================================================== -->
+
+    <footer>
+        <div class="secondfooter">
+            <section>
+                <h4>leboncoin 2006 - 2017</h4>
+
+            </section>
+        </div>
+    </footer>
+
+
+
+    <!-- ==========================================================================
+                   End of footer
+========================================================================== -->
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
