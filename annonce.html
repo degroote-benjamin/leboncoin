@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Leboncoin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -86,29 +86,29 @@
             <article>
                 <h3>Votre annonce</h3>
 
-                <label for="categorie" id="categorie">Categorie*</label>
-                <select class="categori" name="categorie">
+                <label for="categorie">Categorie*</label>
+                <select class="categorie" name="categorie" id="categorie">
 
                 </select>
 
-                <label for="vous" id="vous">Vous êtes un</label>
-                <INPUT type="radio" name="vous" value="part"> Particulier
+                <label for="vous">Vous êtes un</label>
+                <INPUT type="radio" name="vous" value="part" id="vous"> Particulier
                 <INPUT type="radio" name="vous" value="pro"> Profesionnel
 
-                <label for="annonce" id="annonce">Type d'annonces</label>
-                <INPUT type="radio" name="annonce" value="offre"> Offres
+                <label for="annonce">Type d'annonces</label>
+                <INPUT type="radio" name="annonce" value="offre" id="annonce"> Offres
                 <INPUT type="radio" name="annonce" value="demande"> Demandes
 
-                <label for="titannon" id="titannon">Titre de l'annonces</label>
-                <input type="text" name="titannon" value="">
+                <label for="titannon">Titre de l'annonces</label>
+                <input type="text" name="titannon" value="" id="titannon">
 
 
-                <label for="textann" id="textann">Texte de l'annonce</label>
-                <textarea name="textann" rows="4"></textarea>
+                <label for="textann">Texte de l'annonce</label>
+                <textarea name="textann" rows="4" id="textann"></textarea>
 
-                <label for="prix" id="prix">Prix</label>
+                <label for="prix">Prix</label>
                 <div class="prix">
-                    <input type="text" name="prix" value=""><span></span>
+                    <input type="text" name="prix" value="" id="prix"><span></span>
                 </div>
 
                 <p><span>Photos :</span> Une annonce avec photo est 7 fois plus consultée qu'une annonce sans photo</p>
@@ -147,13 +147,13 @@
             <article>
                 <h2>Localisation</h2>
                 <section>
-                    <label for="ville" id="ville">Ville ou code postal</label>
+                    <label for="ville">Ville ou code postal</label>
                     <div>
                         <span></span>
-                        <input type="text" name="ville" value="">
+                        <input type="text" name="ville" value="" id="ville">
                     </div>
-                    <label for="adr" id="adr">Adresse</label>
-                    <input type="text" name="adr" value="" placeholder="Voie ou numero + voie">
+                    <label for="adr">Adresse</label>
+                    <input type="text" name="adr" value="" id="adr" placeholder="Voie ou numero + voie">
                     <span>Valider mon adresse</span>
 
                     <p>Complétez votre adresse et les personnes utilisant la recherche autour de soi trouveront plus facilement votre annonce. Si vous ne souhaitez pas renseigner votre adresse exacte, indiquez votre rue sans donner le numéro. Cette information
@@ -164,24 +164,24 @@
                 <section>
 
                   <figure>
-                    <img src="map_france.png" alt="Image de map de france">
+                    <img src="img/map_france.png" alt="Image de map de france">
                   </figure>
                 </section>
             </article>
 
             <article>
               <h2>Vos informations</h2>
-              <label for="pseudo" id="pseudo">Pseudo</label>
-              <input type="text" name="pseudo" value="">
+              <label for="pseudo">Pseudo</label>
+              <input type="text" name="pseudo" value="" id="pseudo">
 
-              <label for="email" id="email">Email</label>
-              <input type="email" name="email" value="">
+              <label for="email">Email</label>
+              <input type="email" name="email" value="" id="email">
 
-              <label for="tel" id="tel">Telephone</label>
-              <input type="tel" name="tel" value="">
+              <label for="tel">Telephone</label>
+              <input type="tel" name="tel" value="" id="tel">
 
-              <input type="radio" name="" value=""><span>Masquer le numero de telephone dans l'annonce</span>
-              <input type="radio" name="" value=""><span>Je ne souhaite par des societere etrangere leboncoin</span>
+              <input type="checkbox" value=""><span>Masquer le numero de telephone dans l'annonce</span>
+              <input type="checkbox" value=""><span>Je ne souhaite par des societere etrangere leboncoin</span>
             </article>
             <button type="button" name="button">Valider</button>
 
