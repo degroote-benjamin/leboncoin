@@ -109,7 +109,7 @@ textarea {
     padding: 0;
 }
 
-.mainnav, .connexion, .regionul, .firstfooter, .secondfooter, .network p {
+.mainnav, .connexion, .regionul, .firstfooter, .secondfooter, .network p, .photo h3 {
     display: none;
 }
 
@@ -120,6 +120,10 @@ a {
 
 header, .navlogo, .maincontainer {
     display: flex;
+}
+
+label {
+    display: block;
 }
 
 
@@ -263,6 +267,137 @@ header {
 }
 
 
+/* ------------------- annonce.html ---------------------*/
+
+.annonce>h2 {
+    color: #989898;
+    font-size: 20px;
+    border-bottom: 1px solid #989898;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    margin-top: 20px;
+}
+
+.annoncecontainer {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.annoncecontainer>h3 {
+    width: 97.5%;
+    background-color: #666666;
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    padding-left: 2.7%;
+}
+
+.votreannonce {
+    width: 95%;
+    margin: auto;
+}
+
+.maincontainer article input[type="tel"], .maincontainer article input[type="email"],.maincontainer article input[type="text"], .maincontainer article select, .maincontainer article textarea, .prix {
+    width: 95%;
+}
+
+.prix {
+    display: flex;
+    align-items: center;
+    border: 1px solid #929292;
+    border-radius: 5px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.prix input {
+    border: 0;
+}
+
+.votreannonce {
+    font-size: 13px;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.photo article {
+  margin-left: 5px;
+  height: 63px;
+}
+
+.photo figure{
+  border: 1px dashed #929292;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+.photo figure i{
+  font-size: 20px;
+  padding: 20px;
+}
+
+.septphoto h3{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  color: #F56B2A;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.septphoto figure{
+  border: 0;
+  background-color: inherit;
+}
+
+.septphoto{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px dashed #F56B2A;
+  margin: 20px 0;
+}
+
+.maincontainer{
+  margin-bottom: 20px;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+.button{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: #F56B2A;
+  display: block;
+  padding: 15px 25%;
+  border-radius: 4px;
+  opacity: 0.5;
+  color: white;
+}
+
+
+.votreannonce > p {
+  background-color: #A7D7EF;
+  margin: 10px 5px;
+  text-align: left;
+  border-radius: 4px;
+  padding: 7px 0;
+}
+
+.mapform figure img{
+  margin: auto;
+  display: block;
+}
 /* ==========================================================================
                    end of main rules
 ========================================================================== */
@@ -430,13 +565,11 @@ header {
     .maincontainer {
         justify-content: space-between;
     }
-
-    .map{
-      margin-top: 25px;
+    .map {
+        margin-top: 25px;
     }
-
-    .bonaffaire a{
-      width: 334px;
+    .bonaffaire a {
+        width: 334px;
     }
     /* -------------------- first section in main rules ------ */
     /* ----------------- second section in main rules ---------------*/
@@ -457,97 +590,82 @@ header {
     /* ==========================================================================
                               end of footer rules
   ========================================================================== */
-      .firstfooter , .secondfooter{
+    .firstfooter, .secondfooter {
         width: 85%;
         display: flex;
         justify-content: space-between;
         margin: auto;
         flex-wrap: wrap;
         margin-top: 20px;
-      }
-
-      .firstfooter ul , .secondfooter ul{
+    }
+    .firstfooter ul, .secondfooter ul {
         width: 23%;
         list-style-type: none;
         margin-bottom: 20px;
-      }
-
-      .grey{
+    }
+    .grey {
         background-color: #474747;
         padding-top: 20px;
-        color:#FFFFF3;
-      }
-
-      .lightgrey{
+        color: #FFFFF3;
+    }
+    .lightgrey {
         background-color: #F2F2F2
-      }
-
-
-      .grey .title{
+    }
+    .grey .title {
         border-bottom: 1px solid #666666;
-      }
-
-      .grey li a{
-        color:#FFFFF3;
-      }
-      .lightgrey .title{
+    }
+    .grey li a {
+        color: #FFFFF3;
+    }
+    .lightgrey .title {
         border-bottom: 1px solid #D1D1D1;
-      }
-
-      .lightgrey li a{
-        color:#3873BD;
-      }
-      .title{
+    }
+    .lightgrey li a {
+        color: #3873BD;
+    }
+    .title {
         font-size: 20px;
         margin: 20px 0;
-      }
-
-      footer li{
+    }
+    footer li {
         width: 100%;
         font-size: 14px;
-      }
-      .secondfooter ul li figure , .logopayement img{
+    }
+    .secondfooter ul li figure, .logopayement img {
         width: 110px;
         height: 30px;
         margin: 0;
-      }
-
-      .logopayement{
+    }
+    .logopayement {
         display: flex;
         justify-content: space-between;
-      }
-
-      .lang{
+    }
+    .lang {
         width: 100%;
         color: black;
-      }
-
-      .secondfooter > p{
+    }
+    .secondfooter>p {
         width: 100%;
         text-align: center;
         border-top: 1px solid #666666;
         border-bottom: 1px solid #666666;
-        padding: 8px 0 ;
-      }
-
-      .network p{
+        padding: 8px 0;
+    }
+    .network p {
         font-size: 13px;
         margin-right: 5px;
-      }
-
-      .network{
+    }
+    .network {
         width: 20%;
         display: flex;
         align-items: center;
-      }
-
-      .network figure{
+    }
+    .network figure {
         margin: 0;
-      }
-
-      .network i{
+    }
+    .network i {
         font-size: 22px;
-      }
+    }
     /* ==========================================================================
                                        end of footer rules
   ========================================================================== */
