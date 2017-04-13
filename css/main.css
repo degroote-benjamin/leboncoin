@@ -301,6 +301,15 @@ header {
 
 .maincontainer article input[type="tel"], .maincontainer article input[type="email"],.maincontainer article input[type="text"], .maincontainer article select, .maincontainer article textarea, .prix {
     width: 95%;
+    height: 40px;
+}
+
+label , select{
+  margin: 10px 0;
+}
+
+input[type="checkbox"]{
+  margin-right: 5px;
 }
 
 .prix {
@@ -385,6 +394,10 @@ input{
   color: white;
 }
 
+.buttonblue{
+  background-color: #4183D7;
+  opacity: inherit;
+}
 
 .votreannonce > p {
   background-color: #A7D7EF;
@@ -397,6 +410,11 @@ input{
 .mapform figure img{
   margin: auto;
   display: block;
+}
+
+.mapform figure{
+  border: 1px solid lightgrey;
+  margin-top: 7px;
 }
 /* ==========================================================================
                    end of main rules
@@ -442,6 +460,7 @@ input{
     /* ==========================================================================
                   main rules
   ========================================================================== */
+
     .maincontainer {
         flex-wrap: wrap;
         flex-direction: row;
@@ -463,8 +482,22 @@ input{
         border-radius: 4px;
         font-size: 12px;
     }
-    /* ----------------- second section in main rules ---------------*/
-    /* --------------------- Aside region rules ---------------------*/
+    /* --------------------- Annonce.html ---------------------*/
+
+    .adressecontainer{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .valideadresse{
+      display: flex;
+      flex-wrap: wrap;
+      width: 47%;
+    }
+
+    .mapform{
+      width: 47%;
+    }
     /* ==========================================================================
                      end of main rules
   ========================================================================== */
