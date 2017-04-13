@@ -284,6 +284,9 @@ header {
     margin-bottom: 20px;
 }
 
+.pannonce{
+  background-color: inherit !important;
+}
 .annoncecontainer>h3 {
     width: 97.5%;
     background-color: #666666;
@@ -299,17 +302,17 @@ header {
     margin: auto;
 }
 
-.maincontainer article input[type="tel"], .maincontainer article input[type="email"],.maincontainer article input[type="text"], .maincontainer article select, .maincontainer article textarea, .prix {
+.maincontainer article input[type="tel"], .maincontainer article input[type="email"], .maincontainer article input[type="text"], .maincontainer article select, .maincontainer article textarea, .prix {
     width: 95%;
     height: 40px;
 }
 
-label , select{
-  margin: 10px 0;
+label, select {
+    margin: 10px 0;
 }
 
-input[type="checkbox"]{
-  margin-right: 5px;
+input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 .prix {
@@ -330,92 +333,94 @@ input[type="checkbox"]{
 }
 
 .photo {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .photo article {
-  margin-left: 5px;
-  height: 63px;
+    margin-left: 5px;
+    height: 63px;
 }
 
-.photo figure{
-  border: 1px dashed #929292;
-  background-color: #F2F2F2;
-  margin: 0;
+.photo figure {
+    border: 1px dashed #929292;
+    background-color: #F2F2F2;
+    margin: 0;
 }
 
-.photo figure i{
-  font-size: 20px;
-  padding: 20px;
+.photo figure i {
+    font-size: 20px;
+    padding: 20px;
 }
 
-.septphoto h3{
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-  color: #F56B2A;
-  font-size: 16px;
-  font-weight: lighter;
+.septphoto h3 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    color: #F56B2A;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
-.septphoto figure{
-  border: 0;
-  background-color: inherit;
+.septphoto figure {
+    border: 0;
+    background-color: inherit;
 }
 
-.septphoto{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 3px dashed #F56B2A;
-  margin: 20px 0;
+.septphoto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px dashed #F56B2A;
+    margin: 20px 0;
 }
 
-.maincontainer{
-  margin-bottom: 20px;
+.maincontainer {
+    margin-bottom: 20px;
 }
 
-input{
-  margin-bottom: 10px;
+input {
+    margin-bottom: 10px;
 }
 
-.button{
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  background-color: #F56B2A;
-  display: block;
-  padding: 15px 25%;
-  border-radius: 4px;
-  opacity: 0.5;
-  color: white;
+.button {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: #F56B2A;
+    display: block;
+    padding: 15px 25%;
+    border-radius: 4px;
+    opacity: 0.5;
+    color: white;
 }
 
-.buttonblue{
-  background-color: #4183D7;
-  opacity: inherit;
+.buttonblue {
+    background-color: #4183D7;
+    opacity: inherit;
 }
 
-.votreannonce > p {
-  background-color: #A7D7EF;
-  margin: 10px 5px;
-  text-align: left;
-  border-radius: 4px;
-  padding: 7px 0;
+.votreannonce>p {
+    background-color: #A7D7EF;
+    margin: 10px 5px;
+    text-align: left;
+    border-radius: 4px;
+    padding: 7px 0;
 }
 
-.mapform figure img{
-  margin: auto;
-  display: block;
+.mapform figure img {
+    margin: auto;
+    display: block;
 }
 
-.mapform figure{
-  border: 1px solid lightgrey;
-  margin-top: 7px;
+.mapform figure {
+    border: 1px solid lightgrey;
+    margin-top: 7px;
 }
+
+
 /* ==========================================================================
                    end of main rules
 ========================================================================== */
@@ -460,7 +465,6 @@ input{
     /* ==========================================================================
                   main rules
   ========================================================================== */
-
     .maincontainer {
         flex-wrap: wrap;
         flex-direction: row;
@@ -483,20 +487,65 @@ input{
         font-size: 12px;
     }
     /* --------------------- Annonce.html ---------------------*/
-
-    .adressecontainer{
-      display: flex;
-      flex-wrap: wrap;
+    .photo h3 {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
     }
-
-    .valideadresse{
-      display: flex;
-      flex-wrap: wrap;
-      width: 47%;
+    .photo article {
+        width: 22%;
+        height: 150px;
+        background-color: #F2F2F2;
+        border: 1px dashed #929292;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 15px;
     }
-
-    .mapform{
-      width: 47%;
+    .photo figure {
+        border: 0;
+        margin-top: 30px;
+    }
+    .photo figure i {
+        font-size: 50px;
+        padding: 0px;
+    }
+    .septphoto h3 {
+        width: 70%;
+    }
+    .septphoto {
+        border: 3px dashed #F56B2A !important;
+        margin: 0;
+    }
+    .adressecontainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .valideadresse {
+        display: flex;
+        flex-wrap: wrap;
+        width: 47%;
+    }
+    .mapform {
+        width: 47%;
+    }
+    .adr {
+        width: 100%;
+    }
+    #adr {
+        width: 60%;
+        margin-right: 15px;
+    }
+    .button {
+        width: 25%;
+        padding: 10px 0;
+        overflow: hidden;
+        ;
+    }
+    .mapform figure {
+        width: 90%;
+        margin: auto;
     }
     /* ==========================================================================
                      end of main rules
@@ -604,8 +653,6 @@ input{
     .bonaffaire a {
         width: 334px;
     }
-    /* -------------------- first section in main rules ------ */
-    /* ----------------- second section in main rules ---------------*/
     /* --------------------- Aside region rules ---------------------*/
     .regionul {
         list-style-type: none;
@@ -617,6 +664,48 @@ input{
     .regionul a:hover {
         color: #F56B2A;
     }
+    /* -------------------- Annonce.html ------ */
+    .votreannonce {
+        width: 70%;
+        margin: 0;
+        margin-left: 20px;
+    }
+    .valideadresse {
+        width: 65%;
+    }
+    .mapform {
+        width: 31%;
+    }
+    .maincontainer article input[type="tel"], .maincontainer article input[type="email"], .maincontainer article input[type="text"], .maincontainer article select, .maincontainer article textarea, .prix {
+        width: 60%;
+        height: 40px;
+    }
+    .prix {
+        justify-content: space-between;
+        width: 35%;
+    }
+    .prix input {
+        width: 100%;
+    }
+    .prix span {
+        margin-right: 15px;
+    }
+    label {
+        width: 100%;
+    }
+    .vosinfo input[type="text"],.vosinfo input[type="tel"],.vosinfo input[type="email"]{
+      width: 35% !important;
+      height: 30px;
+    }
+
+    .buttonblue {
+      margin: 0;
+    }
+
+    textarea{
+      height: 200px !important;
+    }
+
     /* ==========================================================================
                      end of main rules
   ========================================================================== */
