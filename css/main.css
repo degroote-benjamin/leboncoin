@@ -126,7 +126,23 @@ label {
     display: block;
 }
 
+.orange1{
+  color: #F56B2A;
+}
 
+.blue1{
+  color: #3873BD;
+}
+
+.blue1:hover{
+  text-decoration: underline;
+}
+.firstfooter ul li a:hover{
+  text-decoration: underline;
+}
+.secondfooter ul li a:hover{
+  text-decoration: underline;
+}
 /* ==========================================================================
                    end of common rules
 ========================================================================== */
@@ -405,19 +421,25 @@ input {
 
 .button {
     margin: auto;
-    width: 50%;
-    text-align: center;
     background-color: #F56B2A;
     display: block;
-    padding: 15px 25%;
-    border-radius: 4px;
     opacity: 0.5;
+    padding: 15px 25%;
+    width: 50%;
+}
+
+.button, .buttonblue {
+    text-align: center;
+    border-radius: 4px;
     color: white;
 }
 
 .buttonblue {
     background-color: #4183D7;
-    opacity: inherit;
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+    margin: auto;
 }
 
 .votreannonce>p {
@@ -451,6 +473,7 @@ input {
     margin: 20px auto;
 }
 
+
 .savoir {
     display: none;
 }
@@ -464,6 +487,8 @@ input {
     text-align: center;
     background-color: #F56B2A;
     color: white;
+    font-size: 14px;
+    line-height: 40px;
 }
 
 .une article figure {
@@ -483,7 +508,6 @@ input {
 .offres {
     border: 1px solid #ccc;
 }
-
 
 .offreannonce ul {
     list-style-type: none;
@@ -518,10 +542,21 @@ input {
     align-items: center;
 }
 
+.offres a section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.articleoffre{
+  width: 75%;
+}
+
 .coeur {
     display: flex;
-    width: 100%;
+    width: 20%;
     justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 }
 
 .coeur i {
@@ -567,6 +602,10 @@ input {
     font-size: 14px;
     font-weight: lighter;
     margin-left: 10px;
+}
+
+.footerannonce h4 {
+    line-height: 70px;
 }
 
 
@@ -665,38 +704,52 @@ input {
     .button {
         width: 25%;
         padding: 10px 0;
-        overflow: hidden;
-        ;
     }
     .mapform figure {
         width: 90%;
         margin: auto;
     }
+    .buttonblue {
+        padding: 15px 0;
+        width: 30%;
+        margin: 0;
+    }
     /* ------------------------- offre.html ------------------- */
-    .mainannonce{
-      width: 90%;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
-      justify-content: space-between;
+    .mainannonce {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
-    .une{
-      width: 30%;
+    .une {
+        width: 30%;
+    }
+    .une article a figure {
+        margin: 0;
+        flex-direction: column;
+        border-bottom: 1px solid lightgrey;
+    }
+    .offreannonce {
+        width: 65%;
+        margin-right: 20px;
+    }
+    .navpage li {
+        font-size: 10px;
     }
 
-    .une article a figure{
-      margin: 0;
-      flex-direction: column;
-      border-bottom: 1px solid lightgrey;
-    }
-    .offreannonce{
-      width: 65%;
-      margin-right: 20px;
+    .maincontaineroffre{
+      width: 100%;
     }
 
-    .navpage li{
-      font-size: 10px;
+    .offreannonce nav ul span{
+      display: block;
+      margin-left:5px;
+    }
+
+    .offreannonce nav ul li{
+      font-size: 12px;
     }
     /* ==========================================================================
                      end of main rules
@@ -713,7 +766,7 @@ input {
     /* ==========================================================================
                       common rules
   ========================================================================== */
-    .menumobile, .selectregion,.searchmobile {
+    .menumobile, .selectregion, .searchmobile {
         display: none;
     }
     .connexion, .mainnav, .region, .firstfooter, .secondfooter, .network p, .regionul, .search {
@@ -750,8 +803,8 @@ input {
         display: flex;
     }
     .mainnav ul li {
-        padding: 0 7px;
-        font-size: 16px;
+        padding: 0 1%;
+        font-size: 14px;
         letter-spacing: -0.5px;
     }
     .mainnav ul li a {
@@ -848,66 +901,52 @@ input {
         width: 35% !important;
         height: 30px;
     }
-    .buttonblue {
-        margin: 0;
-    }
     textarea {
         height: 200px !important;
     }
-
     /* ---------------------------- offre.html ----------------- */
-
-    .containergrey{
-      width: 100%;
-      background-color: #E6E6E6;
-      padding: 10px 0;
+    .containergrey {
+        width: 100%;
+        background-color: #E6E6E6;
+        padding: 10px 0;
     }
-    .search,.selectionne , .radio00,.radio{
-      display: flex;
-      flex-wrap: wrap;
+    .search, .selectionne, .radio00, .radio {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .search{
-      width: 78%;
-      margin:auto;
+    .search {
+        width: 78%;
+        margin: auto;
     }
-
-    .selectionne{
-      width: 75%;
+    .selectionne {
+        width: 75%;
     }
-
-    .selectionne input{
-      width: 70%;
-      margin: 0;
+    .selectionne input {
+        width: 70%;
+        margin: 0;
     }
-
-    .selectionne select{
-      width: 25% !important;
-      margin: 0;
-      margin-left: 10px;
+    .selectionne select {
+        width: 25% !important;
+        margin: 0;
+        margin-left: 10px;
     }
-
-    .buttonrecherche{
-      width: 23%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: blue;
-      border-radius: 4px;
+    .buttonrecherche {
+        width: 23%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        border-radius: 4px;
     }
-
-    .buttonrecherche a{
-      color: white;
+    .buttonrecherche a {
+        color: white;
     }
-
-    .radio{
-      font-size: 13px;
+    .radio {
+        font-size: 13px;
     }
-
-    .radio input{
-      display: block;
+    .radio input {
+        display: block;
     }
-
-
     /* ==========================================================================
                      end of main rules
   ========================================================================== */
@@ -951,6 +990,12 @@ input {
         font-size: 20px;
         margin: 20px 0;
     }
+    .firstfooter .title{
+      color: #3873BD;
+    }
+    .secondfooter .title{
+      color: white;
+    }
     footer li {
         width: 100%;
         font-size: 14px;
@@ -962,7 +1007,6 @@ input {
     }
     .logopayement {
         display: flex;
-        justify-content: space-between;
     }
     .lang {
         width: 100%;
