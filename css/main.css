@@ -109,7 +109,7 @@ textarea {
     padding: 0;
 }
 
-.mainnav, .connexion, .regionul, .firstfooter, .secondfooter, .network p, .photo h3 {
+.mainnav, .connexion, .regionul, .firstfooter, .secondfooter, .network p, .photo h3, .search {
     display: none;
 }
 
@@ -171,6 +171,23 @@ header {
 .logo img {
     width: 100%;
     height: 100%;
+}
+
+
+/* --------------------------- offre.html ----------------------- */
+
+.navlogooffre {
+    width: 95%;
+    margin: auto;
+}
+
+.searchmobile {
+    padding: 10px;
+    background-color: white;
+    color: #F56B2A;
+    border-radius: 4px;
+    width: 40px;
+    text-align: center;
 }
 
 
@@ -284,9 +301,10 @@ header {
     margin-bottom: 20px;
 }
 
-.pannonce{
-  background-color: inherit !important;
+.pannonce {
+    background-color: inherit !important;
 }
+
 .annoncecontainer>h3 {
     width: 97.5%;
     background-color: #666666;
@@ -421,6 +439,108 @@ input {
 }
 
 
+/* --------------------- offre.html ------------------ */
+
+.mainannonce h2 {
+    color: #989898;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    margin-top: 20px;
+}
+
+.savoir {
+    display: none;
+}
+
+.une {
+    border: 2px solid #F56B2A;
+}
+
+.une h3 {
+    width: 100%;
+    text-align: center;
+    background-color: #F56B2A;
+    color: white;
+}
+
+.une article figure {
+    display: flex;
+}
+
+.orange {
+    color: #F56B2A;
+    font-weight: bold;
+}
+
+.une figcaption p {
+    margin: 15px 0px;
+    margin-left: 10px;
+}
+
+.offres  {
+    border: 1px solid #ccc;
+}
+
+.offreannonce{
+  margin-top: 20px;
+}
+.offreannonce ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.offreannonce nav ul span,.trier {
+    display: none
+}
+
+.offreannonce nav ul li {
+    height: 50px;
+    text-align: center;
+    padding: 0 10px;
+    color: #1a1a1a;
+    background-color: #E6E6E6;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.offreannonce nav li:first-child{
+  background-color: white;
+}
+.offres a section{
+  width: 70%;
+}
+.offres a{
+    display: flex;
+    align-items: center;
+}
+
+.coeur{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.coeur i{
+  margin-right: 10px;
+}
+
+.navpage{
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.navpage li{
+  margin-right: 5px;
+}
+
+.navpage a{
+  color: #336699;
+}
+
+.navpage a:hover{
+text-decoration:underline;  
+}
 /* ==========================================================================
                    end of main rules
 ========================================================================== */
@@ -693,19 +813,16 @@ input {
     label {
         width: 100%;
     }
-    .vosinfo input[type="text"],.vosinfo input[type="tel"],.vosinfo input[type="email"]{
-      width: 35% !important;
-      height: 30px;
+    .vosinfo input[type="text"], .vosinfo input[type="tel"], .vosinfo input[type="email"] {
+        width: 35% !important;
+        height: 30px;
     }
-
     .buttonblue {
-      margin: 0;
+        margin: 0;
     }
-
-    textarea{
-      height: 200px !important;
+    textarea {
+        height: 200px !important;
     }
-
     /* ==========================================================================
                      end of main rules
   ========================================================================== */

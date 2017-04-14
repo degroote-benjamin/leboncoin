@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Leboncoin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -28,44 +29,50 @@
                    Start of header
 ========================================================================== -->
     <header>
-        <div class="navlogo">
-            <aside class="menumobile">
-                <a href="">Menu</a>
-            </aside>
-            <aside class="logo">
-                <figure>
-                    <img src="img/logo.svg" alt="Logo leboncoin">
+        <div class="header">
+            <div class="navlogo navlogooffre">
+                <aside class="menumobile">
+                    <a href="">Menu</a>
+                </aside>
+                <aside class="logo">
+                    <figure>
+                        <img src="img/logo.svg" alt="Logo leboncoin">
+                    </figure>
+                </aside>
+                <figure class="searchmobile">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+
                 </figure>
+                <nav class="mainnav">
+                    <ul>
+                        <li>
+                            <a href="">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="annonce.html">Déposer une annonce</a>
+                        </li>
+                        <li>
+                            <a href="offre.html">offres</a>
+                        </li>
+                        <li>
+                            <a href="">Demande</a>
+                        </li>
+                        <li>
+                            <a href="">Mes annonces</a>
+                        </li>
+                        <li>
+                            <a href="">Boutiques</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <aside class="connexion">
+                <a>
+                    <i class="fa fa-user fa-1x" aria-hidden="true"></i>se connecter
+                </a>
             </aside>
-            <nav class="mainnav">
-                <ul>
-                    <li>
-                        <a href="">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="">Déposer une annonce</a>
-                    </li>
-                    <li>
-                        <a href="">offres</a>
-                    </li>
-                    <li>
-                        <a href="">Demande</a>
-                    </li>
-                    <li>
-                        <a href="">Mes annonces</a>
-                    </li>
-                    <li>
-                        <a href="">Boutiques</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
-        <aside class="connexion">
-            <button type="button" name="button">
-              <i class="fa fa-user-o" aria-hidden="true"></i>
-              se connecter
-          </button>
-        </aside>
     </header>
 
 
@@ -81,13 +88,13 @@
 ========================================================================== -->
     <div class="maincontainer">
 
-        <section>
+        <section class="search">
 
             <article>
                 <input type="text" name="text" value="">
                 <select class="" name="selectionner">
-            <option value="selectionner">Selectionner</option>
-        </select>
+                   <option value="selectionner">Selectionner</option>
+                </select>
             </article>
 
 
@@ -108,22 +115,20 @@
 
                 <input type="text" name="Ville" value="" placeholder="VIlle ou code postale">
             </article>
-
-
         </section>
 
-        <section>
+        <section class="mainannonce">
             <h2>Annonce : ile-de-France</h2>
 
             <aside class="une">
-                <h2>Annonce a la une</h2>
+                <h3>Annonce a la une</h3>
                 <article>
                     <a href="#">
                         <figure>
                             <img src="img/annonceune.jpg" alt="">
                             <figcaption>
                                 <p>rayonnage a palette occasion</p>
-                                <p>15 €</p>
+                                <p class="orange">15 €</p>
                             </figcaption>
                         </figure>
                     </a>
@@ -135,7 +140,7 @@
                             <img src="img/annonceune.jpg" alt="">
                             <figcaption>
                                 <p>rayonnage a palette occasion</p>
-                                <p>15 €</p>
+                                <p class="orange">15 €</p>
                             </figcaption>
                         </figure>
                     </a>
@@ -148,40 +153,42 @@
                             <img src="img/annonceune.jpg" alt="">
                             <figcaption>
                                 <p>rayonnage a palette occasion</p>
-                                <p>15 €</p>
+                                <p class="orange">15 €</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
 
-                <a href="#">En savoir plus</a>
+                <a href="#" class="savoir">En savoir plus</a>
             </aside>
 
 
-            <section>
+            <section class="offreannonce">
                 <nav>
                     <ul>
-                        <li><a href="">Toutes</a>4 554 000</li>
-                        <li><a href="">Particulier</a>4 000 000</li>
-                        <li><a href="">Profesionnel</a>554 000</li>
+                        <li><a href="">Toutes</a><span>4 554 000</span></li>
+                        <li><a href="">Particulier</a><span>4 000 000</span></li>
+                        <li><a href="">Profesionnel</a><span>554 000</span></li>
                     </ul>
-                    <select name="trier">
+                </nav>
+                <select name="trier" class="trier">
                   <option value="date1">Trier par : date</option>
                   <option value="prix1">Trier par : prix</option>
                 </select>
-                </nav>
                 <article class="offres">
                     <a href="#">
                         <figure>
                             <img src="img/mac.jpg" alt="">
                         </figure>
                         <section>
-                            <h2>Macbook air 11"</h2>
-                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <h3>Macbook air 11"</h3>
                             <p>Informatique</p>
                             <p>Haut-de-Seine</p>
                             <span>560€</span>
-                            <p>Aujourd'hui,15:54</p>
+                            <aside class="coeur">
+                                <p>Aujourd'hui,15:54</p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </aside>
                         </section>
                     </a>
                 </article>
@@ -192,12 +199,14 @@
                             <img src="img/mac.jpg" alt="">
                         </figure>
                         <section>
-                            <h2>Macbook air 11"</h2>
-                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <h3>Macbook air 11"</h3>
                             <p>Informatique</p>
                             <p>Haut-de-Seine</p>
                             <span>560€</span>
-                            <p>Aujourd'hui,15:54</p>
+                            <aside class="coeur">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <p>Aujourd'hui,15:54</p>
+                            </aside>
                         </section>
                     </a>
                 </article>
@@ -208,40 +217,43 @@
                             <img src="img/mac.jpg" alt="">
                         </figure>
                         <section>
-                            <h2>Macbook air 11"</h2>
-                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <h3>Macbook air 11"</h3>
                             <p>Informatique</p>
                             <p>Haut-de-Seine</p>
                             <span>560€</span>
-                            <p>Aujourd'hui,15:54</p>
+                            <aside class="coeur">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <p>Aujourd'hui,15:54</p>
+                            </aside>
                         </section>
                     </a>
                 </article>
-                <ul>
-                  <li><a href=""><i class="fa fa-backward" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
-                  <li><a href="">1</a></li>
-                  <li><a href="">2</a></li>
-                  <li><a href="">3</a></li>
-                  <li><a href="">4</a></li>
-                  <li><a href="">5</a></li>
-                  <li><a href="">6</a></li>
-                  <li><a href="">7</a></li>
-                  <li><a href="">8</a></li>
-                  <li><a href="">9</a></li>
-                  <li><a href="">10</a></li>
-                  <li><a href="">11</a></li>
-                  <li><a href="">12</a></li>
-                  <li><a href="">13</a></li>
-                  <li><a href="">14</a></li>
-                  <li><a href="">15</a></li>
-                  <li><a href="">16</a></li>
-                  <li><a href="">17</a></li>
-                  <li><a href="">18</a></li>
-                  <li><a href="">19</a></li>
-                  <li><a href="">20</a></li>
-                  <li><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-                  <li><a href=""><i class="fa fa-forward" aria-hidden="true"></i></a></li>
+
+                <ul class="navpage">
+                    <li><a href=""><i class="fa fa-backward" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">6</a></li>
+                    <li><a href="">7</a></li>
+                    <li><a href="">8</a></li>
+                    <li><a href="">9</a></li>
+                    <li><a href="">10</a></li>
+                    <li><a href="">11</a></li>
+                    <li><a href="">12</a></li>
+                    <li><a href="">13</a></li>
+                    <li><a href="">14</a></li>
+                    <li><a href="">15</a></li>
+                    <li><a href="">16</a></li>
+                    <li><a href="">17</a></li>
+                    <li><a href="">18</a></li>
+                    <li><a href="">19</a></li>
+                    <li><a href="">20</a></li>
+                    <li><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-forward" aria-hidden="true"></i></a></li>
                 </ul>
             </section>
         </section>
@@ -477,10 +489,10 @@
             <p> Partenaires : Younited Credit - Kudoz - Agriaffaires - MachineryZone - leDénicheur - Swipsi</p>
         </div>
 
-        <section>
+        <section class="footermobile">
             <h4>leboncoin 2006 - 2017</h4>
 
-            <article class="">
+            <article class="network">
                 <p>Retrouvez-nous sur :</p>
                 <figure>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
