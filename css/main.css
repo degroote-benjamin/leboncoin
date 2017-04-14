@@ -441,12 +441,14 @@ input {
 
 /* --------------------- offre.html ------------------ */
 
-.mainannonce h2 {
+.maincontaineroffre h2 {
     color: #989898;
     font-size: 20px;
     margin-bottom: 20px;
     padding-bottom: 4px;
     margin-top: 20px;
+    width: 90%;
+    margin: 20px auto;
 }
 
 .savoir {
@@ -478,19 +480,17 @@ input {
     margin-left: 10px;
 }
 
-.offres  {
+.offres {
     border: 1px solid #ccc;
 }
 
-.offreannonce{
-  margin-top: 20px;
-}
+
 .offreannonce ul {
     list-style-type: none;
     display: flex;
 }
 
-.offreannonce nav ul span,.trier {
+.offreannonce nav ul span, .trier {
     display: none
 }
 
@@ -504,43 +504,48 @@ input {
     display: flex;
     align-items: center;
 }
-.offreannonce nav li:first-child{
-  background-color: white;
+
+.offreannonce nav li:first-child {
+    background-color: white;
 }
-.offres a section{
-  width: 70%;
+
+.offres a section {
+    width: 70%;
 }
-.offres a{
+
+.offres a {
     display: flex;
     align-items: center;
 }
 
-.coeur{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+.coeur {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.coeur i{
-  margin-right: 10px;
+.coeur i {
+    margin-right: 10px;
 }
 
-.navpage{
-  margin-top: 10px;
-  justify-content: center;
+.navpage {
+    margin-top: 10px;
+    justify-content: center;
 }
 
-.navpage li{
-  margin-right: 5px;
+.navpage li {
+    margin-right: 5px;
 }
 
-.navpage a{
-  color: #336699;
+.navpage a {
+    color: #336699;
 }
 
-.navpage a:hover{
-text-decoration:underline;  
+.navpage a:hover {
+    text-decoration: underline;
 }
+
+
 /* ==========================================================================
                    end of main rules
 ========================================================================== */
@@ -667,6 +672,32 @@ text-decoration:underline;
         width: 90%;
         margin: auto;
     }
+    /* ------------------------- offre.html ------------------- */
+    .mainannonce{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .une{
+      width: 30%;
+    }
+
+    .une article a figure{
+      margin: 0;
+      flex-direction: column;
+      border-bottom: 1px solid lightgrey;
+    }
+    .offreannonce{
+      width: 65%;
+      margin-right: 20px;
+    }
+
+    .navpage li{
+      font-size: 10px;
+    }
     /* ==========================================================================
                      end of main rules
   ========================================================================== */
@@ -682,10 +713,10 @@ text-decoration:underline;
     /* ==========================================================================
                       common rules
   ========================================================================== */
-    .menumobile, .selectregion {
+    .menumobile, .selectregion,.searchmobile {
         display: none;
     }
-    .connexion, .mainnav, .region, .firstfooter, .secondfooter, .network p, .regionul {
+    .connexion, .mainnav, .region, .firstfooter, .secondfooter, .network p, .regionul, .search {
         display: block;
     }
     .header, .maincontainer, .firstfooter, .secondfooter {
@@ -823,6 +854,60 @@ text-decoration:underline;
     textarea {
         height: 200px !important;
     }
+
+    /* ---------------------------- offre.html ----------------- */
+
+    .containergrey{
+      width: 100%;
+      background-color: #E6E6E6;
+      padding: 10px 0;
+    }
+    .search,.selectionne , .radio00,.radio{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .search{
+      width: 78%;
+      margin:auto;
+    }
+
+    .selectionne{
+      width: 75%;
+    }
+
+    .selectionne input{
+      width: 70%;
+      margin: 0;
+    }
+
+    .selectionne select{
+      width: 25% !important;
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    .buttonrecherche{
+      width: 23%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      border-radius: 4px;
+    }
+
+    .buttonrecherche a{
+      color: white;
+    }
+
+    .radio{
+      font-size: 13px;
+    }
+
+    .radio input{
+      display: block;
+    }
+
+
     /* ==========================================================================
                      end of main rules
   ========================================================================== */
