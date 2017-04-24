@@ -259,15 +259,17 @@ header {
                 main rules
 ========================================================================== */
 
-.maincontainer {
+.maincontainer , .maincontaineroffre{
     width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 82px;
 }
 
+.maincontainer{
+  margin-top: 82px;
+}
 .map, .bonaffaire, .region {
     width: 100%;
 }
@@ -454,7 +456,7 @@ input[type="checkbox"] {
     margin: 20px 0;
 }
 
-.maincontainer {
+.maincontainer , .maincontaineroffre {
     margin-bottom: 20px;
 }
 
@@ -569,14 +571,17 @@ input {
     border: 1px solid #ccc;
     display: flex;
     align-items: center;
+    width: 125px;
+}
+
+.offreannonce nav ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .offreannonce nav li:first-child {
     background-color: white;
-}
-
-.offres a section {
-    width: 70%;
 }
 
 .offres a {
@@ -672,7 +677,7 @@ input {
     /* ==========================================================================
                   main rules
   ========================================================================== */
-    .maincontainer {
+    .maincontainer , .maincontaineroffre{
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
@@ -786,10 +791,24 @@ input {
     }
     .offreannonce nav ul span {
         display: block;
-        margin-left: 5px;
+        margin-left: 2px;
+        font-size: 11px;
     }
     .offreannonce nav ul li {
         font-size: 12px;
+    }
+
+    .savoir{
+      display: flex;
+      background-color: #F2F2F2;
+      color: #57BDED;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .savoir:hover{
+      text-decoration: underline;
     }
     /* ==========================================================================
                      end of main rules
@@ -812,7 +831,7 @@ input {
     .connexion, .mainnav, .region, .firstfooter, .secondfooter, .network p, .regionul, .search {
         display: block;
     }
-    .header, .maincontainer, .firstfooter, .secondfooter {
+    .header, .maincontainer, .firstfooter, .secondfooter , .maincontaineroffre {
         width: 85%;
     }
     /* ==========================================================================
@@ -888,7 +907,7 @@ input {
     .region {
         width: 19%;
     }
-    .maincontainer {
+    .maincontainer , .maincontaineroffre {
         justify-content: space-between;
     }
     .map {
@@ -998,10 +1017,10 @@ input {
         margin-left: 50px;
     }
     .offreannonce nav ul li {
-        width: 225px;
+        width: 175px;
     }
     .offreannonce nav ul li a {
-        width: 200px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
